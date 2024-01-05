@@ -21,6 +21,7 @@ class BookFactory extends Factory
             'pages'=> fake()->numberBetween(50, 500),
             'ISBN'=> fake()->isbn13(),
             'year'=> fake()->year(),
+            'category_id'=> fake()->numberBetween(1, 10),
         ];
     }
 }
