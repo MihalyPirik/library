@@ -12,7 +12,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        $categories = Category::with('books')->get();
+        return response()->json($categories);
     }
 
     /**
@@ -26,9 +27,10 @@ class CategoryController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Category $category)
+    public function show($id)
     {
-        //
+        $category = Category::with('books')->findOrFail($id);
+        return response()->json($category);
     }
 
     /**
@@ -42,8 +44,10 @@ class CategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Category $category)
+    public function destroy($id)
     {
-        //
+        $category = Category::findOrFail($id);
+        $category->delete();
+        return response()->json('', 204);
     }
 }
