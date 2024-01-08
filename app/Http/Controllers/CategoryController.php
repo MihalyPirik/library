@@ -12,6 +12,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
+        //$categories = Category::all();
         $categories = Category::with('books')->get();
         return response()->json($categories);
     }

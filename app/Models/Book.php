@@ -11,6 +11,7 @@ class Book extends Model
     use HasFactory;
 
     public $timestamps = false;
+    protected $fillable = ["title", "pages", "ISBN", "year", "category_id"];
 
     /**
      * Get the user that owns the Book

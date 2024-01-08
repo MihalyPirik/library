@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\BookStoreRequest;
+use App\Http\Requests\BookUpdateRequest;
 use App\Models\Book;
 use Illuminate\Http\Request;
 
@@ -26,5 +28,21 @@ class BookController extends Controller
         $book = Book::findOrFail($id);
         $book->delete();
         return response()->json('', 204);
+    }
+
+    public function store(BookStoreRequest $request)
+    {
+        $request->validated($request->all());
+        $book = Book::create($request->only(["title", "year", "pages", "ISBN", "category_id"]));
+        return response()->json($book, 201);
+    }
+
+    public function update(BookUpdateRequest $request, $id)
+    {
+        $book = Book::findOrFail($id);
+        $request->validated($request->all());
+
+        $book->update($request->only(["title", "year", "pages", "ISBN", "category_id"]));
+        return response()->json($book, 200);
     }
 }

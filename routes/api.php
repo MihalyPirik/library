@@ -19,7 +19,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('books', [BookController::class, 'index']);
 Route::get('books/{id}', [BookController::class, 'show']);
 Route::delete('books/{id}', [BookController::class, 'destroy']);
+Route::post('books', [BookController::class, 'store']);
+Route::delete('books/{id}', [BookController::class, 'destroy']);
+Route::put('books/{id}', [BookController::class, 'update']);
+Route::patch('books/{id}', [BookController::class, 'update']);
 
-Route::get('categories/', [CategoryController::class, 'index']);
+Route::get('categories', [CategoryController::class, 'index']);
 Route::get('categories/{id}', [CategoryController::class, 'show']);
 Route::delete('categories/{id}', [CategoryController::class, 'destroy']);
