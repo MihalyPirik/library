@@ -32,7 +32,7 @@ class BookController extends Controller
 
     public function store(BookStoreRequest $request)
     {
-        $request->validated($request->all());
+        //$request->validated($request->all());
         $book = Book::create($request->only(["title", "year", "pages", "ISBN", "category_id"]));
         return response()->json($book, 201);
     }
@@ -44,5 +44,13 @@ class BookController extends Controller
 
         $book->update($request->only(["title", "year", "pages", "ISBN", "category_id"]));
         return response()->json($book, 200);
+    }
+
+    public function showByTitle($title)
+    {
+        $books = Book::where('title', 'like', '%'.$title.'%')->get();
+        if (count($books) == 0)
+            return response()->json(['message' => 'No book found.'], 404);
+        return response()->json($books);
     }
 }
