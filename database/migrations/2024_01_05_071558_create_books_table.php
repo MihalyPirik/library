@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->string('title', 100);
             $table->integer('pages');
-            $table->string('ISBN', 20);
+            $table->string('ISBN', 13)->unique();
             $table->integer('year');
             // $table->timestamps();
         });

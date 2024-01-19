@@ -24,7 +24,7 @@ class BookStoreRequest extends FormRequest
         return [
             'title' =>'required|string|max:100',
             'pages' =>'required|integer',
-            'ISBN' =>'required|string|max:20',
+            'ISBN' =>'required|string|max:13|unique:books,ISBN',
             'year' =>'required|integer',
             'category_id' =>'required|integer|exists:categories,id',
         ];
