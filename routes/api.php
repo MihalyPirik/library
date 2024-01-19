@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\CategoryController;
 use Illuminate\Http\Request;
@@ -34,3 +35,5 @@ Route::patch('categories/{id}', [CategoryController::class, 'update']);
 Route::delete('categories/{id}', [CategoryController::class, 'destroy']);
 
 Route::get('categories/{id}/books', [CategoryController::class, 'booksOfcategory']);
+
+Route::apiResource('authors', AuthorController::class);

@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
+use App\Models\Author;
 use App\Models\Book;
 use App\Models\Category;
 use Illuminate\Database\Seeder;
@@ -23,6 +24,14 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $categories = Category::factory(10)->create();
-        Book::factory(100)->create();
+        $books = Book::factory(100)->create();
+        $authors = Author::factory(20)->create();
+
+        foreach ($books as $book) {
+            $book->authors()->attach(
+                $authors->random(rand(1, 5))->pluck('id')->toArray()
+                //$authors->random()->id
+            );
+        }
     }
 }
