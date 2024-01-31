@@ -1,0 +1,628 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "library",
+    "dateExported": "2024-01-31T14:00:56.388Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "54b5b1d3-6739-41f0-b3d7-b4cd79e10d24",
+            "name": "Books",
+            "containerId": "",
+            "created": "2024-01-31T13:51:41.696Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "150b040a-2da2-4e33-84de-63f399025755",
+            "name": "Reader",
+            "containerId": "",
+            "created": "2024-01-31T13:51:41.699Z",
+            "sortNum": 15000
+        },
+        {
+            "_id": "f0b0b17b-3035-41e6-837c-55f9b9425551",
+            "name": "Category",
+            "containerId": "",
+            "created": "2024-01-31T13:51:41.697Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "d015ab14-1479-4966-8b96-0fea970d7114",
+            "name": "Authors",
+            "containerId": "",
+            "created": "2024-01-31T13:51:41.698Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "b707893f-29e1-4e43-9262-6ed6dbd6d14e",
+            "colId": "c705890d-6903-4732-94d9-9d2fb09079d8",
+            "containerId": "54b5b1d3-6739-41f0-b3d7-b4cd79e10d24",
+            "name": "Get all books",
+            "url": "http://127.0.0.1:8000/api/books",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-01-31T13:51:41.696Z",
+            "modified": "2024-01-31T13:51:41.696Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "dd676f79-2f42-430a-8586-ff6870f59de2",
+            "colId": "c705890d-6903-4732-94d9-9d2fb09079d8",
+            "containerId": "f0b0b17b-3035-41e6-837c-55f9b9425551",
+            "name": "Get all categories",
+            "url": "http://127.0.0.1:8000/api/categories",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-01-31T13:51:41.698Z",
+            "modified": "2024-01-31T13:51:41.698Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "24aae655-7fa1-48a1-ba53-e978356545dd",
+            "colId": "c705890d-6903-4732-94d9-9d2fb09079d8",
+            "containerId": "d015ab14-1479-4966-8b96-0fea970d7114",
+            "name": "Get all authors",
+            "url": "http://127.0.0.1:8000/api/authors",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-01-31T13:51:41.708Z",
+            "modified": "2024-01-31T13:51:41.708Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d4105e47-14c6-4a9a-be91-99e352478466",
+            "colId": "c705890d-6903-4732-94d9-9d2fb09079d8",
+            "containerId": "150b040a-2da2-4e33-84de-63f399025755",
+            "name": "Get all readers",
+            "url": "http://127.0.0.1:8000/api/readers",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-01-31T13:51:41.710Z",
+            "modified": "2024-01-31T13:51:41.710Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3a27645c-da68-438b-aaae-d759853c9d73",
+            "colId": "c705890d-6903-4732-94d9-9d2fb09079d8",
+            "containerId": "54b5b1d3-6739-41f0-b3d7-b4cd79e10d24",
+            "name": "Search book",
+            "url": "http://127.0.0.1:8000/api/books/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-01-31T13:51:41.697Z",
+            "modified": "2024-01-31T13:51:41.697Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8d7d00e1-2968-49c5-b558-1f7c117c0f63",
+            "colId": "c705890d-6903-4732-94d9-9d2fb09079d8",
+            "containerId": "f0b0b17b-3035-41e6-837c-55f9b9425551",
+            "name": "Search category",
+            "url": "http://127.0.0.1:8000/api/categories/10",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-01-31T13:51:41.699Z",
+            "modified": "2024-01-31T13:51:41.699Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cf5474f8-a37d-4919-b0a3-2de5ed9e9fba",
+            "colId": "c705890d-6903-4732-94d9-9d2fb09079d8",
+            "containerId": "150b040a-2da2-4e33-84de-63f399025755",
+            "name": "Search reader",
+            "url": "http://127.0.0.1:8000/api/readers/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-01-31T13:51:41.711Z",
+            "modified": "2024-01-31T13:51:41.711Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "06bfe392-a7c9-43d4-b149-7152a294396f",
+            "colId": "c705890d-6903-4732-94d9-9d2fb09079d8",
+            "containerId": "150b040a-2da2-4e33-84de-63f399025755",
+            "name": "Books of reader",
+            "url": "http://127.0.0.1:8000/api/readers/1/books",
+            "method": "GET",
+            "sortNum": 25000,
+            "created": "2024-01-31T13:51:41.715Z",
+            "modified": "2024-01-31T13:57:33.962Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b13afe6d-248f-4da3-8249-b7d6b4b56039",
+            "colId": "c705890d-6903-4732-94d9-9d2fb09079d8",
+            "containerId": "54b5b1d3-6739-41f0-b3d7-b4cd79e10d24",
+            "name": "Delete book",
+            "url": "http://127.0.0.1:8000/api/books/10",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-01-31T13:51:41.700Z",
+            "modified": "2024-01-31T13:51:41.700Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fc096d45-9e8d-4943-948e-77b04a33253c",
+            "colId": "c705890d-6903-4732-94d9-9d2fb09079d8",
+            "containerId": "f0b0b17b-3035-41e6-837c-55f9b9425551",
+            "name": "Delete category",
+            "url": "http://127.0.0.1:8000/api/categories/11",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-01-31T13:51:41.704Z",
+            "modified": "2024-01-31T13:51:41.704Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7df9fbd8-6176-4743-b780-899df613078d",
+            "colId": "c705890d-6903-4732-94d9-9d2fb09079d8",
+            "containerId": "150b040a-2da2-4e33-84de-63f399025755",
+            "name": "Delete reader",
+            "url": "http://127.0.0.1:8000/api/readers/31",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-01-31T13:51:41.712Z",
+            "modified": "2024-01-31T13:51:41.712Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e5473b65-8ee8-4b7e-babd-31773e33cebe",
+            "colId": "c705890d-6903-4732-94d9-9d2fb09079d8",
+            "containerId": "54b5b1d3-6739-41f0-b3d7-b4cd79e10d24",
+            "name": "Create book",
+            "url": "http://127.0.0.1:8000/api/books",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-01-31T13:51:41.701Z",
+            "modified": "2024-01-31T13:51:41.701Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\" : \"Kőszívű ember fiai\",\n  \"pages\" : 555,\n  \"ISBN\" : \"1234567890125\",\n  \"year\" : 1765,\n  \"category_id\" : 4\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ee57e379-ca53-4137-b717-971bacee54e3",
+            "colId": "c705890d-6903-4732-94d9-9d2fb09079d8",
+            "containerId": "f0b0b17b-3035-41e6-837c-55f9b9425551",
+            "name": "Create category",
+            "url": "http://127.0.0.1:8000/api/categories",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-01-31T13:51:41.705Z",
+            "modified": "2024-01-31T13:51:41.705Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\" : \"Fiction\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "70750fbf-a139-4faf-9221-fde76648d6e6",
+            "colId": "c705890d-6903-4732-94d9-9d2fb09079d8",
+            "containerId": "150b040a-2da2-4e33-84de-63f399025755",
+            "name": "Create reader",
+            "url": "http://127.0.0.1:8000/api/readers",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-01-31T13:51:41.713Z",
+            "modified": "2024-01-31T13:51:41.713Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\" : \"Kovács Béla\",\n  \"address\" : \"Győr, Szent István út 7.\",\n  \"email\" : \"kovacs@jedlik.eu\",\n  \"password\" : \"asassdas\",\n  \"phone\" : \"1234556678\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f958b39a-d260-4319-ad8d-f7e3ff914ad0",
+            "colId": "c705890d-6903-4732-94d9-9d2fb09079d8",
+            "containerId": "f0b0b17b-3035-41e6-837c-55f9b9425551",
+            "name": "Update category",
+            "url": "http://127.0.0.1:8000/api/categories/1",
+            "method": "PATCH",
+            "sortNum": 50000,
+            "created": "2024-01-31T13:51:41.706Z",
+            "modified": "2024-01-31T13:51:41.706Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\" : \"Sci-fi\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6644591e-ea67-494f-8b5d-5b95984f94c8",
+            "colId": "c705890d-6903-4732-94d9-9d2fb09079d8",
+            "containerId": "54b5b1d3-6739-41f0-b3d7-b4cd79e10d24",
+            "name": "Search book by title",
+            "url": "http://127.0.0.1:8000/api/books/search/et",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-01-31T13:51:41.707Z",
+            "modified": "2024-01-31T13:51:41.707Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e27a925d-ef4d-4956-89a6-6442ae3be9e5",
+            "colId": "c705890d-6903-4732-94d9-9d2fb09079d8",
+            "containerId": "54b5b1d3-6739-41f0-b3d7-b4cd79e10d24",
+            "name": "Readers of book",
+            "url": "http://127.0.0.1:8000/api/books/8/readers",
+            "method": "GET",
+            "sortNum": 55000,
+            "created": "2024-01-31T13:51:41.709Z",
+            "modified": "2024-01-31T14:00:36.042Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "91a0e470-d5ad-4cd4-88b8-dd113cdf89c9",
+            "colId": "c705890d-6903-4732-94d9-9d2fb09079d8",
+            "containerId": "54b5b1d3-6739-41f0-b3d7-b4cd79e10d24",
+            "name": "Update book",
+            "url": "http://127.0.0.1:8000/api/books/101",
+            "method": "PATCH",
+            "sortNum": 60000,
+            "created": "2024-01-31T13:51:41.702Z",
+            "modified": "2024-01-31T13:51:41.702Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"year\" : 2002\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "130d6b38-3ada-4ea0-aaac-c7e6fdf428ad",
+            "colId": "c705890d-6903-4732-94d9-9d2fb09079d8",
+            "containerId": "f0b0b17b-3035-41e6-837c-55f9b9425551",
+            "name": "Books of category",
+            "url": "http://127.0.0.1:8000/api/categories/1/books",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-01-31T13:51:41.703Z",
+            "modified": "2024-01-31T13:51:41.703Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1f4732e0-5848-4f38-8c19-40c9faf05dc0",
+            "colId": "c705890d-6903-4732-94d9-9d2fb09079d8",
+            "containerId": "150b040a-2da2-4e33-84de-63f399025755",
+            "name": "Update book",
+            "url": "http://127.0.0.1:8000/api/readers/31",
+            "method": "PATCH",
+            "sortNum": 60000,
+            "created": "2024-01-31T13:51:41.714Z",
+            "modified": "2024-01-31T13:51:41.714Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"address\" : \"Nyúl, Iskola u. 7\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

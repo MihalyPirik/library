@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ReaderController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -25,7 +26,7 @@ Route::put('books/{id}', [BookController::class, 'update']);
 Route::patch('books/{id}', [BookController::class, 'update']);
 
 Route::get('books/search/{title}', [BookController::class, 'showByTitle']);
-
+Route::get('books/{id}/readers', [BookController::class,'readersOfBook']);
 
 Route::get('categories', [CategoryController::class, 'index']);
 Route::get('categories/{id}', [CategoryController::class, 'show']);
@@ -37,3 +38,6 @@ Route::delete('categories/{id}', [CategoryController::class, 'destroy']);
 Route::get('categories/{id}/books', [CategoryController::class, 'booksOfcategory']);
 
 Route::apiResource('authors', AuthorController::class);
+
+Route::apiResource('readers', ReaderController::class);
+Route::get('readers/{reader}/books', [ReaderController::class, 'booksOfReader']);

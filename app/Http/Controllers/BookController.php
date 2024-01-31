@@ -59,4 +59,12 @@ class BookController extends Controller
             return response()->json(['message' => 'No book found.'], 404);
         return response()->json($books);
     }
+
+    public function readersOfBook($id)
+    {
+        $book = Book::find($id);
+        if ($book == null)
+            return response()->json(['message' => 'No book found.'], 404);
+        return response()->json($book->readers);
+    }
 }
